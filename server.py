@@ -3,10 +3,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/.well-known/acme-challenge/EGMBUzX4gwX09U3JBHNvdMc8ymU3JNXH0HwC9LEB5qY")
+@app.route("/.well-known/acme-challenge/6ghOsV23Vn_cfP8G9dOILam1gIGit_QifPB-HegvPQI")
 # e.g. /.well-known/acme-challenge/lzrajCaq8vbw5Qz2o_XXXXXXXXXXXXXXXXX
 def hello():
-    return"EGMBUzX4gwX09U3JBHNvdMc8ymU3JNXH0HwC9LEB5qY.0PJTmSXcBn1hGck1NEMfzicOGKIdXuyTRMIJRzMzZIk"
+    return"6ghOsV23Vn_cfP8G9dOILam1gIGit_QifPB-HegvPQI.0PJTmSXcBn1hGck1NEMfzicOGKIdXuyTRMIJRzMzZIk"
     # e.g. return "lzrajCaq8vbw5Qz2o_XXXXXXXXXXXXXXXXXXz4RnfWtLKaIc6EdhsOsr4fb6RFZuUoabZW5dPW36cmc"
 
 if __name__ == "__main__":

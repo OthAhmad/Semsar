@@ -3,9 +3,11 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/.well-known/acme-challenge/5FeEE1UbWyWz9kUbsd640n7Ir9y1f8k2N6yxwAYbMnk")
+@app.route("/.well-known/acme-challenge/rTIKELTOQre9XwaFp0yiuZ_Wh2YjAwheA5brHvOrA48")
+# e.g. /.well-known/acme-challenge/lzrajCaq8vbw5Qz2o_XXXXXXXXXXXXXXXXX
 def hello():
-    return "5FeEE1UbWyWz9kUbsd640n7Ir9y1f8k2N6yxwAYbMnk.0PJTmSXcBn1hGck1NEMfzicOGKIdXuyTRMIJRzMzZIk"
+    return"rTIKELTOQre9XwaFp0yiuZ_Wh2YjAwheA5brHvOrA48.0PJTmSXcBn1hGck1NEMfzicOGKIdXuyTRMIJRzMzZIk"
+    # e.g. return "lzrajCaq8vbw5Qz2o_XXXXXXXXXXXXXXXXXXz4RnfWtLKaIc6EdhsOsr4fb6RFZuUoabZW5dPW36cmc"
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
